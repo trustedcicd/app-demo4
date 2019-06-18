@@ -1,3 +1,5 @@
 FROM alpine
 
-CMD echo 'hello trusted cicd world!'
+ADD hello-trusted-cicd-world.sh /
+
+ENTRYPOINT ["/hello-trusted-cicd-world.sh"]
